@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .gd{
+            display:grid;
+            /* grid-template-columns: 10px 10px 10px 1px; */
+            grid-template-rows: auto;
+            background-color: rgb(63, 63, 167);
+            justify-content: center;
+            font-size: 100%;
+           
+            padding:10%;
+            /* gap:4px; */
+            grid-template-columns: 10% 10% 10% ;
+            grid-auto-rows: 30%;
+        }
+        .dg{
+             font-size: 150%;
+             background-color: green;
+             text-align: center;
+        }
+        .d1{
+            background-color: blueviolet;
+            grid-column-start:2;
+            /* grid-column-end: 3; */
+            grid-row-start: 2;
+            /* grid-row-end:; */
+        }
+        .gd2{
+            height: 20vh;
+            background-color: darkmagenta;
+            padding:  10%;
+            display:grid;
+            font-size: 120%;
+            justify-content: center;
+            grid-template-columns:10% 10% 10%;
+            /* grid-template-rows:50px 50px 50px */
+            grid-auto-rows: 30% 30%;
+            column-gap:0.5%;
+            row-gap: 3%;
+            
+            
+        }
+        .gd2{
+           
+            text-align: center;
+            background-color:darkturquoise;
+        }
+        .dd1{
+            background-color: chartreuse;
+        }
+        .dd2{
+           background-color: rgb(115, 28, 223);
+        }
+        .dd3{
+            background-color: chocolate;
+            grid-column-start: 2;
+            grid-row-start: 2;
+            grid-column-end:4;
+            grid-row-end: 4;
+        }
+        .dd4{
+            background-color: darkred;
+        }
+        .dd5{
+             background-color: darkblue;
+        }
+        .dd6{
+            background-color: rgb(72, 69, 69);
+            /* grid-row-start:; */
+            /* grid-column-r */
+        }
+        /* gd3 */
+        .gd3{
+            height:15vh;
+            width:30vw;
+            background-color: chartreuse;
+            text-align: center;
+            display:grid;
+            padding:20%;
+            justify-content: center;
+            grid-template-columns:20% 20% 20% 20%;
+            grid-template-rows: 30% 30% 30%;
+            row-gap: 3%;
+            column-gap: 2%;
+        }
+        .dd7{
+            background-color: rgb(242, 15, 53);
+            grid-row-start: 1;
+            grid-row-end:4;
+
+        }
+        .dd8{
+            background-color: rgb(246, 10, 49);
+            grid-column-start:2;
+            grid-column-end:4;
+        }
+        .dd9{
+            background-color: rgb(7, 84, 227);
+            /* grid-row-start:0; */
+            /* grid-row-end:; */
+        }
+        .dd10{
+           background-color: rgb(255, 0, 0);
+        }
+        .dd11{
+           background-color: rgb(242, 22, 110);
+           /* grid-row-start: */
+        }
+        .dd12{
+           background-color: rgb(242, 6, 46);
+           grid-column-start: 4; 
+           /* grid-column-end: ; */
+           grid-row-start:2;
+           grid-row-end:4;
+           
+
+        }
+        .dd13{
+           background-color: chocolate;
+        }
+        .dd14{
+          background-color: darkmagenta;
+        }
+        .alfa{
+            background-color:darkblue;
+            height:16vh;
+            width:30vw;
+       
+            /* font-size: 30px; */
+            text-align: center;
+            display:grid;
+            padding:20%;
+            justify-content: center;
+            gap:5px;
+            /* align-items:center; */
+            grid-template-columns: 20% 20% 20% 20% 20% 20%;
+            grid-template-rows: 30% 30% ;
+
+        }
+        .alfaa{
+            background-color: red;
+            grid-row-start:1;
+            /* grid-row-end:; */
+        }
+        .alfab{
+            background-color: rgb(13, 222, 103);
+            grid-column-start:2;
+            grid-column-end:4
+        }
+        .alfac{
+            background-color: green;
+        }
+        .alfad{
+            background-color: rgb(18, 177, 240);
+            grid-column-start:5;
+            grid-row-start:1;
+            grid-row-end:4
+
+
+        }
+        .alfae{
+            background-color: brown;
+            /* grid-column-start:1; */
+            /* grid-column-end:1; */
+            grid-row-start:2;
+            grid-row-end:4;
+            /* grid-row-end:; */
+        }
+        .alfaf{
+            background-color:orangered;
+            grid-column-start:2;
+            grid-column-end:5;
+            grid-row-start:2;
+            grid-row-end:4;
+
+        }
+        .alfag{
+            background-color: purple;
+            grid-column-start:6;
+            grid-row-start:1;
+            grid-row-end: 4;
+        }
+        .alfah{
+            background-color: lightslategrey;
+            grid-column-start:7;
+            grid-row-start:1;
+            grid-row-end:4
+        }
+    </style>
+</head>
+<body>
+    <div class="gd">
+        <div class="dg d1">1</div>
+        <div class="dg d2">2</div>
+        <div class="dg d3">3</div>
+        <div class="dg d4">4</div>
+        <div class="dg d5">5</div>
+        <div class="dg d6">6</div>
+        <div class="dg d7">7</div>
+        <div class="dg d8">8</div>
+        <div class="dg d9">9</div>
+        <div class="dg d10">10</div>
+        <div class="dg d11">11</div>
+        <div class="dg d12">12</div>
+    </div>
+     <br><br>
+    <div class="gd2">
+        <div class="dg2 dd1">1</div>
+        <div class="dg2 dd2">2</div>
+        <div class="dg2 dd3">3</div>
+        <div class="dg2 dd4">4</div>
+         <div class="dg2 dd5">5</div>
+        <div class="dg2 dd6">6</div>
+    </div>
+    <br><br>
+    <div class=gd3>
+        <div class="dg2 dd7">7</div>
+        <div class="dg2 dd8">8</div>
+        <div class="dg2 dd9">9</div>
+        <div class="dg2 dd10">10</div>
+        <div class="dg2 dd11">11</div>
+        <div class="dg2 dd12">12</div>
+        <div class="dg2 dd13">13</div>
+        <div class="dg2 dd14">14</div>
+    </div>
+    <div class=" alfa">
+        <div class="alfaa">a</div>
+        <div class="alfab">b</div>
+        <div class="alfac">c</div>
+        <div class="alfad">d</div>
+        <div class="alfae">e</div>
+        <div class="alfaf">f</div>
+        <div class="alfag">g</div>
+        <div class="alfah">h</div>
+    </div>
+</body>
+</html>

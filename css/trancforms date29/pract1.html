@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            border:2px solid black;
+            height:50vh;
+            width:50vw;
+            
+        }
+        .cd{
+            /* border:2px solid ; */
+            background-color: darkblue;
+            width:100px;
+            height:50px;
+            /* margin: 15%; */
+            transition: width 2s;
+        }
+        .translate:hover~ .main .cd{
+            /* transform:skew(20deg); */
+            /* transform: rotatex(10 deg) */
+            transform: translate(50px, 60px);
+            transition: width 2s;
+            width:200px
+            
+            /* late(20px, 50px); */
+            /* transform: scaleY(1.5); */
+}
+    
+    </style>
+</head>
+<body>
+    <button class="translate">trancelate</button>
+    <button>rotate </button>
+    <button>scale</button>
+    <button>skew</button>
+    <div class="main">
+        <div class="cd"></div>
+    </div>
+   
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .main{
+          border:2px solid;
+          width:300px;
+          height:200px;
+          background-color: skyblue;
+          /* padding-top:120px; */
+          display: grid;
+          justify-content: center;
+          align-items: center;
+    }
+    .fan{
+        width:80px;
+        /* border:1px solid; */
+        /* background-color: skyblue; */
+        border-radius: 50%;
+        /* transition:width 2s; */
+        /* rotate: 300deg; */
+        /* transition-delay:(3s); */
+        /* transform: r */
+        /* transform: rotate(270deg); */
+    }
+    .fan:hover{
+        /* width:300%; */
+        /* background-color: darkcyan; */
+        /* transition-duration: 1ms; */
+        transition: 1s;
+        /* width:100px; */
+        /* width:200px; */
+        /* margin-top: 10px; */
+        /* clip-path: circle(50%); */
+        transform: rotate(270deg);
+    }
+
+    /* #trancelate:active~.main .fan{
+        transform:translate(120px)
+    } */
+    /* #scale:active~.main .fan{
+        transform:scale(2,2);
+    } */
+    .my-speed3:hover~ .main .fan{
+        /* transform: translate(100px); */
+        transform: rotate(360deg);
+        transition: 1s;
+       
+        /* transition-duration:20s; */
+    }
+    #speed2:hover~ .main .fan{
+         transform: rotate(360deg);
+         transition-duration: 4s;
+         /* transition-timing-function: easer; */
+    }
+    #speed1:hover~ .main .fan{
+        transform: rotate(360deg);
+        transition-duration:10s;
+    }
+    </style>
+</head>
+<body>
+    <h1>Fan Rotating</h1>
+    <button class="my-speed3">speed3</button>
+    <button id="speed2">speed2</button>
+    <button id="speed1">speed1</button>
+    <br><br>
+    <div class="main">
+        <img class="fan" src="../fan.jpeg" alt="">
+    </div>
+    
+</body>
+</html>
